@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+    <script src="components/codigo.js"></script>
+
+    <link rel="stylesheet" href="components/loader.css">
+    <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
+     <link rel="stylesheet" href="lib/bootstrap/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+      ons.ready(function() {
+        console.log("Onsen UI is ready!");
+      });
+
+      if (ons.platform.isIPhoneX()) {
+        document.documentElement.setAttribute('onsflag-iphonex-portrait', '');
+        document.documentElement.setAttribute('onsflag-iphonex-landscape', '');
+      }
+    </script>
+  </head>
+
+  <body class="corBg bg-danger">
+
+    <div class="container-fluid">
+      
+      <div class="row">
+        <div class="col-12 bg-primary text-center mt-3">
+          <h3>Exercício 3 triangulo </h3>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-12 bg-primary text-center">
+          <form onsubmit="return false">
+            <h4>Qual é o comprimento de cada lado do triangulo?</h4> <br>
+            Lado 1: <input type="number" id="lado1" class="mt-2 bg-info"><br>
+            Lado 2: <input type="number" id="lado2" class="mt-2 bg-info"><br>
+            Lado 3: <input type="number" id="lado3" class="mt-2 bg-info"><br>                      
+            <button type="submit" onclick="validacao()" class="btn btn-info mt-2">Qual é o nome do seu triangulo?</button>
+          </form>
+        </div>
+         <div class="col-12 bg-primary text-center">
+         <p class="text-primary">Easter egg</p>
+        </div>
+
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-12 bg-danger text-center" id="creator"></div>
+      </div>
+
+    </div>
+
+  </body>
+</html>
